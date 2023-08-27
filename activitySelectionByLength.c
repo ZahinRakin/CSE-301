@@ -4,10 +4,11 @@
 void activitySelectionByLength(int*, int*, int*, int);
 
 int main(){
-  int start[] = {1, 0, 1, 4, 2, 5};
-  int finish[] = {3, 4, 2, 6, 9, 8};
-  int length[] = {2, 4, 1, 2, 7, 3};
-  int n = sizeof(start) / sizeof(start[0]);
+int start[] = {11, 13, 10, 5, 8, 5};
+int finish[] = {14, 16, 16, 7, 10, 9};
+int length[] = {3, 3, 6, 2, 2, 4};
+int n = sizeof(start) / sizeof(start[0]);
+
   activitySelectionByLength(start, finish, length, n);
   return 0;
 }
