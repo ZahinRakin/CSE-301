@@ -12,7 +12,7 @@ int knapsack_01(int weights[], int values[], int n, int capacity) {
             if (i == 0 || w == 0)
                 P[i][w] = 0;
             else if (weights[i - 1] > w)
-                P[i][w] = P[i - 1][w];
+                P[i][w] = P[i - 1][w];//this is for the first part. when upto some weight value i need to put the previous value.
             else
                 P[i][w] = max(values[i - 1] + P[i - 1][w - weights[i - 1]], P[i - 1][w]);
         }
